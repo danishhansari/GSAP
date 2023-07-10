@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidcup Family Golf</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <nav id="navbar" class="text-white flex px-20 gap-[5em] items-center justify-start py-6 fixed z-40 w-full">
+            <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg" alt="Logo" class="h-[60px]">
+            <ul class="flex gap-[2em] uppercase font-semibold tracking-wider">
+                <li>toptracer range</li>
+                <li>golf lessons</li>
+                <li>adventure golf </li>
+                <li>cafe </li>
+                <li>events</li>
+            </ul>
+        </nav>
+
+        <div id="cursor" class="h-[25px] w-[25px] bg-[#95c11e] rounded-[50%] fixed z-30"></div>
+        <div id="cursor-blur" class="h-[400px] w-[400px] bg-[#95c11e2b] rounded-[50%] fixed z-30 blur-2xl"></div>
+        <video src="./assets/hero.mp4" class="object-cover z-[-1] fixed top-0 left-0 h-full w-full" autoplay loop muted></video>
+
+        <div id="main" class="relative bg-black/[.31]">
+            <div id="page1" class="h-screen w-full relative flex items-center justify-center flex-col ">
+                <h1 class="uppercase text-white text-7xl font-black heading relative z-[10]">eat. play. drink</h1>
+                <h2 class="uppercase text-white text-xl font-bold my-2">welcome to sidcup family golf!</h2>
+                <p class="text-white text-center w-[50%]">Sidcup Family Golf is a multipurpose golf facility located in Sidcup, South East London Passionate about technology player development and making golf fun and accessible to everyone</p>
+            </div>
+            <div id="page2" class="h-screen w-full">
+
+            </div>
+        </div>
+</body>
+</html>
