@@ -20,13 +20,14 @@
   display: none;
 }
 #scroller h4{
-  -webkit-text-stroke: 2px #95c11e;
-  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
   margin-right: .1em;
   transition: all .5s ease;
 }
 #scrollbar h4:hover{
+  -webkit-text-stroke: 2px #95c11e;
   color: #95c11e;
 }
 .scroller-in{
