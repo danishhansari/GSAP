@@ -1,7 +1,7 @@
 let cursor = document.querySelector('#cursor');
 let cursorBlur  = document.querySelector('#cursor-blur')
 document.addEventListener('mousemove', function(e){
-    cursor.style.left = e.x+"px" 
+    cursor.style.left = e.x+30+"px" 
     cursor.style.top = e.y+"px"
     cursorBlur.style.left = e.x-200+"px" 
     cursorBlur.style.top = e.y-200+"px"
@@ -34,14 +34,21 @@ function renderElem() {
     render.innerText = thoughts[random];
 }
 renderElem()
-setInterval(renderElem, 2000)
+setInterval(renderElem, 3000)
 
-
-
-
-
-
-
+let liElem = document.querySelectorAll('#navbar ul li');
+liElem.forEach(elem => {
+    elem.addEventListener('mouseenter', () => {
+        cursor.style.scale = 3;
+        cursor.style.border = '1px solid #fff';
+        cursor.style.backgroundColor = 'transparent'
+    })
+    elem.addEventListener('mouseleave', () => {
+        cursor.style.scale = 1;
+        cursor.style.border = 'none'
+        cursor.style.backgroundColor = '#95c11e'
+    })
+})
 gsap.to('#navbar', {
     backgroundColor: "#000",
     height: "90px",
@@ -64,3 +71,51 @@ gsap.to("#main",{
         scrub:2
     }
 })
+gsap.from('#about img, #about-us', {
+    y:50,
+    opacity: 0, 
+    duration:1,
+    stagger: 1,
+    scrollTrigger: {
+        trigger:'#about', 
+        scroller:'body',
+        start: 'top 70%',
+        end: 'top 65%',
+        scrub:2
+    }
+})
+gsap.from('#cards .card', {
+    scale:.9,
+    opacity: 0, 
+    duration:.5,
+    stagger:.1,
+    scrollTrigger: {
+        trigger:'.card', 
+        scroller:'body',
+        start: 'top 70%',
+        end: 'top 65%',
+        scrub:2
+    }
+})
+    gsap.from('#colon1', {
+        x:-70,
+        y:-70, 
+        scrollTrigger:{
+            trigger:'#colon1',
+            scroller:'body',
+            start:'top 55%',
+            end: 'top 45%',
+            scrub:3,
+        }
+    })
+    gsap.from('#colon2', {
+        x:-70,
+        y:-70, 
+        scrollTrigger:{
+            trigger:'#colon1',
+            scroller:'body',
+            start:'top 55%',
+            end: 'top -65%',
+            scrub:1,
+        }
+    })
