@@ -84,16 +84,16 @@ gsap.from('#about img, #about-us', {
         scrub:2
     }
 })
-gsap.from('#cards .card', {
+gsap.from('#cards', {
     scale:.9,
     opacity: 0, 
     duration:.5,
     stagger:.1,
     scrollTrigger: {
-        trigger:'.card', 
+        trigger:'#cards', 
         scroller:'body',
-        start: 'top 70%',
-        end: 'top 65%',
+        start: 'top 0%',
+        end: 'top 100%',
         scrub:2
     }
 })
