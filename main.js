@@ -92,8 +92,8 @@ gsap.from('#cards', {
     scrollTrigger: {
         trigger:'#cards', 
         scroller:'body',
-        start: 'top 0%',
-        end: 'top 100%',
+        start: 'top 55%',
+        end: 'top 60%',
         scrub:2
     }
 })
