@@ -41,3 +41,26 @@
     transform: translateX(-100%);
   }
 }
+#cards .card1{
+  background: url('./assets/card1.avif');
+}
+#cards .card2{
+  background: url('./assets/card2.webp');
+}
+#cards .card3{
+  background: url('./assets/card3.avif');
+}
+#cards .card{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ #cards .card:hover{
+  transform: rotate3d(1,1,0,15deg);
+}
+#cards .card:hover > h1{
+  opacity: 0;
+}
+#green-container{
+  background: linear-gradient(to left bottom, #4bcc00f3, #95c11e);
+}

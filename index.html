@@ -1,74 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidcup Family Golf</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-        <nav id="navbar" class="text-white flex px-20 gap-[5em] items-center justify-start py-6 fixed z-40 w-full">
-            <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg" alt="Logo" class="h-[60px]">
-            <ul class="flex gap-[2em] uppercase font-semibold tracking-wider">
-                <li>toptracer range</li>
-                <li>golf lessons</li>
-                <li>adventure golf </li>
-                <li>cafe </li>
-                <li>events</li>
-            </ul>
-        </nav>
+    <nav id="navbar" class="text-white flex px-20 gap-[5em] items-center justify-start py-6 fixed z-40 w-full">
+        <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg" alt="Logo"
+            class="h-[60px]">
+        <ul class="flex gap-[2em] uppercase font-semibold tracking-wider">
+            <li>toptracer range</li>
+            <li>golf lessons</li>
+            <li>adventure golf </li>
+            <li>cafe </li>
+            <li>events</li>
+        </ul>
+    </nav>
 
-        <div id="cursor" class="h-[25px] w-[25px] bg-[#95c11e] rounded-[50%] fixed z-30"></div>
-        <div id="cursor-blur" class="h-[400px] w-[400px] bg-[#95c11e2b] rounded-[50%] fixed z-30 blur-2xl"></div>
-        <video src="./assets/hero.mp4" class="object-cover z-[-1] fixed top-0 left-0 h-full w-full" autoplay loop muted></video>
+    <div id="cursor" class="h-[25px] w-[25px] bg-[#95c11e] rounded-[50%] fixed z-30"></div>
+    <div id="cursor-blur" class="h-[400px] w-[400px] bg-[#95c11e2b] rounded-[50%] fixed z-30 blur-2xl"></div>
+    <video src="./assets/hero.mp4" class="object-cover z-[-1] fixed top-0 left-0 h-full w-full" autoplay loop
+        muted></video>
 
-        <div id="main" class="relative bg-black/[.31]">
-            <div id="page1" class="h-screen w-full relative flex items-center justify-center flex-col ">
-                <h1 class="uppercase text-white text-7xl font-black heading relative z-[10]">eat. play. drink</h1>
-                <h2 class="uppercase text-white text-xl font-bold my-2">welcome to sidcup family golf!</h2>
-                <p class="text-white text-center w-[50%]">Sidcup Family Golf is a multipurpose golf facility located in Sidcup, South East London Passionate about technology player development and making golf fun and accessible to everyone</p>
+    <div id="main" class="relative bg-black/[.31]">
+        <div id="page1" class="h-screen w-full relative flex items-center justify-center flex-col ">
+            <h1 class="uppercase text-white text-8xl font-black heading relative z-[10]">eat. play. drink</h1>
+            <h2 class="uppercase text-white text-2xl font-bold my-2">welcome to sidcup family golf!</h2>
+            <p class="text-white text-center w-[50%]">Sidcup Family Golf is a multipurpose golf facility located in
+                Sidcup, South East London Passionate about technology player development and making golf fun and
+                accessible to everyone</p>
+        </div>
+        <div id="page2" class="min-h-screen w-full z-[10]">
+            <div id="scroller" class="whitespace-nowrap relative z-10">
+                <div class="scroller-in uppercase text-white inline-block whitespace-nowrap text-8xl font-black">
+                    <h4 class="inline-block">toptracer range</h4>
+                    <h4 class="inline-block">golf lessons</h4>
+                    <h4 class="inline-block">coffee shop</h4>
+                    <h4 class="inline-block">leagues</h4>
+                </div>
+                <div class="scroller-in uppercase text-white inline-block whitespace-nowrap text-8xl font-black z-10">
+                    <h4 class="inline-block">toptracer range</h4>
+                    <h4 class="inline-block">golf lessons</h4>
+                    <h4 class="inline-block">coffee shop</h4>
+                    <h4 class="inline-block">leagues</h4>
+                </div>
             </div>
-            <div id="page2" class="h-screen w-full z-[10]">
-                <div id="scroller" class="whitespace-nowrap relative z-10">
-                    <div class="scroller-in uppercase text-white inline-block whitespace-nowrap text-8xl font-black">
-                        <h4 class="inline-block">toptracer range</h4>
-                        <h4 class="inline-block">golf lessons</h4>
-                        <h4 class="inline-block">coffee shop</h4>
-                        <h4 class="inline-block">leagues</h4>
-                    </div>
-                    <div class="scroller-in uppercase text-white inline-block whitespace-nowrap text-8xl font-black z-10">
-                        <h4 class="inline-block">toptracer range</h4>
-                        <h4 class="inline-block">golf lessons</h4>
-                        <h4 class="inline-block">coffee shop</h4>
-                        <h4 class="inline-block">leagues</h4>
+            <div id="about" class="flex items-center justify-around px-[50px] mt-16 relative z-20">
+                <img src="./assets/page2-left.avif" alt="Image" class="h-[280px] w-[250px] rounded-xl object-cover">
+                <div id="about-us" class="text-white text-center w-[50%]">
+                    <h1 class="uppercase text-5xl font-black mb-4">about us</h1>
+                    <p class="font-medium text-md">Home to a 46-bay, multi-tier, floodlit driving range, powered by
+                        Toptracer Range technology. Complimented by a practice green and bunker, coffee shop and
+                        American Golf Store. There truly is something for everyone as we also boast two outdoor 18-hole
+                        dinosaur themed crazy golf courses.</p>
+                </div>
+                <img src="./assets/page2-right.avif" alt="Page" class="h-[280px] w-[250px] rounded-xl object-cover">
+            </div>
+            <div id="cards" class="h-[80vh] flex items-center justify-evenly gap-[20px] mt-20 relative z-30">
+                <div class="card card1 h-[80%] w-[22%] rounded-xl transition-all duration-500 ease relative">
+                    <h1 class="absolute bottom-4 left-4 text-2xl uppercase font-black text-white w-1/2">toptracer range</h1>
+                    <div class="overlay h-full w-full bg-[#95c11e] rounded-xl pt-20 px-4 opacity-0 hover:opacity-100 transition-all duration-500 ease relative">
+                        <h1 class="uppercase text-black font-black text-2xl mb-4">toptracer range</h1>
+                        <p>Our range delivers the same ball-tracking technology that traces the shots of the games best players on TV</p>
+                        <p>Toptracer Range Technology offers a fun, engaging, tech-driven experience that appeals to seasoned players, range rivals, friends, family members and even first-time golfers</p>
+                    </div>       
+                </div>
+                <div class="card card2 h-[80%] w-[22%] rounded-xl transition-all duration-500 ease relative">
+                    <h1 class="absolute bottom-4 left-4 text-2xl uppercase font-black text-white">mr mulligan's advanture golf</h1>
+                    <div class="overlay h-full w-full bg-[#95c11e] rounded-xl pt-20 px-4 opacity-0 hover:opacity-100 transition-all duration-500 ease">
+                        <h1 class="uppercase text-black font-black text-2xl mb-4">mr mulligan's advanture golf</h1>
+                        <p>Adventure awaits you!</p>
+                        <p>Become jurassic explorer as you delve into the land of the dinosaurs! Putt your way through prihistoric landscape, cascading waterfalls and meet some dinosaur friends along the way.</p>
                     </div>
                 </div>
-                <div id="about" class="flex items-center justify-around px-[50px] mt-16 relative z-20">
-                    <img src="./assets/page2-left.avif" alt="Image" class="h-[280px] w-[250px] rounded-xl object-cover">
-                    <div id="about-us" class="text-white text-center w-[50%]">
-                        <h1 class="uppercase text-5xl font-black mb-4">about us</h1>
-                        <p class="font-medium text-md">Home to a 46-bay, multi-tier, floodlit driving range, powered by Toptracer Range technology. Complimented by a practice green and bunker, coffee shop and American Golf Store. There truly is something for everyone as we also boast two outdoor 18-hole dinosaur themed crazy golf courses.</p>
-                    </div>
-                    <img src="./assets/page2-right.avif" alt="Page" class="h-[285px] w-[250px] rounded-xl object-cover">
-                </div>
-                <div id="cards" class="h-[80vh] flex items-center justify-evenly gap-[20px] bg-red-300 mt-8">
-                    <div class="card h-[80%] w-[22%] bg-blue-300">
-                      
-                    </div>
-                    <div class="card h-[80%] w-[22%] bg-blue-300">
-                        
-                    </div>
-                    <div class="card h-[80%] w-[22%] bg-blue-300">
-                      
+                <div class="card card3 h-[80%] w-[22%] rounded-xl transition-all duration-500 ease relative ">
+                    <h1 class="absolute bottom-4 left-4 text-2xl uppercase font-black text-white ">golf lessons</h1>
+                    <div class="overlay h-full w-full bg-[#95c11e] rounded-xl pt-20 px-4 opacity-0 hover:opacity-100 transition-all duration-500 ease">
+                        <h1 class="uppercase text-black font-black text-2xl mb-4">golf lessons</h1>
+                        <p>Passionate about player development, whether you are new to the game or an aspiring pro, we offer both group and individual lessons tailored to you with the sole focus of helping you reach your goals.</p>
                     </div>
                 </div>
+            </div>
+            <div id="green-container" class="h-[30vh] flex items-center justify-between w-full bg-[#95c11e]">
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="dot" class="h-full object-cover w-[9%]">
+                <h2 class="text-black w-[50%] text-center font-black text-2xl">SIGN UP FOR SIDCUP NEWS AND SPECIAL OFFERS
+                    STRAIGHT TO YOUR INBOX</h2>
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" class="h-full object-cover w-[9%]" alt="dot">
             </div>
         </div>
+        <div id="page3" class="h-[50vh] bg-black w-full relative">
+            <div class="thought relative w-[70%] bg-red-500 mx-auto top-[50%] translate-y-[-50%] text-center h-full">
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-left.svg" class="w-[60px] absolute left-4 top-10" alt="">
+                <h1 class="render text-3xl font-black absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]"></h1>
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-right.svg
+                " class="w-[60px] absolute right-4 bottom-10" alt="">
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
